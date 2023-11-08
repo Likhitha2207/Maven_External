@@ -7,13 +7,14 @@ pipeline {
 				{
 					steps{
 						echo "Building the Project.........."
-					          }
+						bat "mvn clean"
+					}
 				}
 				stage('Deploy') 
 				{
 					steps{
 						echo "Deploy the Project........."
-						
+						bat "mvn c"
 					          }
 				}
 				stage('Test') 
